@@ -1,0 +1,76 @@
+*{
+  font-family: "Slabo 27px";
+  color: black;
+  font-weight: bold;
+}
+
+#imfor{
+  position: fixed;
+  margin-left: 10px;
+  margin-top: 10px;
+  color: rgb(90, 190, 120);
+  line-height: 140pt;
+  font-size: 140pt;
+  width: 100px;
+  font-family: "Anton";
+}
+
+h1{
+  color: rgb(90, 190, 120);
+  line-height: 140pt;
+  font-size: 140pt;
+  margin-left: 55%;
+  width: 100px;
+  font-family: "Anton";
+}
+
+#intro{
+  color: rgba(0, 0, 0, 0);
+  font-family: serif;
+  line-height: 25px;
+  height: 45px;
+}
+
+h2{
+  color: rgba(0, 0, 0, 0.8);
+  text-align: left;
+  font-family: "Anton";
+}
+
+
+#parttwo{
+  margin-left: 55%;
+}
+
+ul{
+  margin-left: -30px;
+}
+
+li{
+  font-size: 14pt;
+  letter-spacing: 2px;
+  width: 250px;
+  list-style: none;
+  line-height: 30px;
+  display: inline-block;
+}
+
+a:hover{
+  color: rgba(90, 190, 120,0.5);
+}
+
+#highlight{
+  position: fixed;
+  margin-top: 300px;
+  transform: rotate(90deg);
+  font-family: "Anton";
+  letter-spacing: 5px;
+  line-height: 25px;
+  width: 300px;
+}
+
+
+em{
+  color: rgba(90, 190, 120, .2);
+
+}

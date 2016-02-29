@@ -1,51 +1,459 @@
 *{
   line-height: 50px;
-  border: 5px dashed rgb(180, 220, 190);
-  color: rgb(190, 200, 180)
 }
 
-p{
-  clear: both;
+.one{
+  margin: 100px;
+  color: rgb(100, 190, 180);
+}
+
+.one #imfor{
+  position: fixed;
+  float: left;
+  width: 40%;
+}
+
+.one h1{
+    font-family: "Pacifico";
+}
+
+.one h2{
   font-family: cursive;
-  color: rgb(190, 200, 180)
-  margin:auto;
+}
+
+.one #poem{
+  float: right;
+  width: 50%;
+}
+
+.two{
+  text-align: center;
+  color: rgb(230, 170, 190);
+}
+
+.two #imfor{
+  font-family: "Caudex";
+  font-weight: 700;
+}
+
+.two h3{
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  border: 1px solid rgb(220, 140, 180);
+  border-radius: 50px;
+  color: rgb(220, 140, 180);
+}
+
+.two #poem{
+  font-family: "Caudex";
+  font-weight: lighter;
+}
+
+.three{
+  color: rgb(230, 190, 170);
+}
+
+.three h1{
+  color: rgb(150, 150, 150);
+  line-height: 140pt;
+  font-size: 140pt;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  font-family: "Anton";
+}
+
+.three #highlight{
+  margin-left: auto;
+  margin-right: auto;
+  transform: rotate(90deg);
+  font-family: "Anton";
+  letter-spacing: 5px;
+  line-height: 25px;
+  width: 250px;
+}
+
+.three p{
+  width: 40%;
+  float: right;
+  font-size: 10pt;
+  line-height:15px;
+}
+
+.three em{
+  color: rgba(150, 150, 150, .2);
+
+}
+
+
+
+
+
+
+
+
+
+.four{
+  color: rgb(230, 190, 90);
+}
+
+.four h1{
+  position: fixed;
+  margin-left: 500px;
+  margin-top: 0px;
+  transform: rotate(90deg);
   text-align: left;
+  width: 800px;
+  height:800px;
+  color: black;
+  line-height: 120pt;
+  font-size: 120pt;
+  font-family: "Anton";
+}
+
+.four h2{
+  text-align: left;
+  width: 50%;
+  color: black;
+  line-height: 72pt;
+  font-size: 72pt;
+  font-family: "Anton";
+  color: rgb(90, 190, 120);
+}
+
+.four p{
+  width: 40%;
+  font-size: 10pt;
+  line-height:15px;
+}
+
+.four em{
+  color: rgba(150, 150, 150, .2);
+
 }
 
 
-.ode{
-  color: rgb(180, 190, 200);
+
+
+
+.five{
+  color: black;
+  font-weight: bold;
 }
 
-h1{
+.five h1{
+  color: rgb(90, 190, 120);
+  line-height: 140pt;
+  font-size: 140pt;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  font-family: "Anton";
+}
+
+.five h2{
+  text-align: left;
+  font-family: "Anton";
+}
+
+.five #pop{
+  margin-top: 0px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  height: 72pt;
+}
+
+.five #highlight{
+  margin-left: auto;
+  margin-right: auto;
+  transform: rotate(90deg);
+  font-family: "Anton";
+  letter-spacing: 5px;
+  line-height: 25px;
+  width: 250px;
+}
+
+.five #poem{
+  width: 40%;
+  float: left;
+  font-size: 10pt;
+  line-height:15px;
+}
+
+.five em{
+  color: rgba(90, 190, 120, .2);
+
+}
+
+
+
+
+
+.six{
+  font-family: "Slabo 27px";
+  color: black;
+  font-weight: bold;
+}
+
+.six #imfor{
+  position: fixed;
+  margin-left: 10px;
+  margin-top: 10px;
+  color: rgb(90, 190, 120);
+  line-height: 140pt;
+  font-size: 140pt;
+  width: 100px;
+  font-family: "Anton";
+}
+
+.six h1{
+  color: rgb(90, 190, 120);
+  line-height: 140pt;
+  font-size: 140pt;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  font-family: "Anton";
+}
+
+.six h2{
+  color: rgba(0, 0, 0, 0.8);
+  text-align: left;
+  font-family: "Anton";
+}
+
+
+.six #parttwo{
+  margin-left: 37%;
+  width: 66%;
+}
+
+.six #highlight{
+  position: fixed;
+  margin-top: 300px;
+  transform: rotate(90deg);
+  font-family: "Anton";
+  letter-spacing: 5px;
+  line-height: 25px;
+  width: 250px;
+}
+
+
+.six em{
+  color: rgba(90, 190, 120, .2);
+
+}
+
+
+
+
+.seven{
+  font-family: "Slabo 27px";
+  color: black;
+  font-weight: bold;
+}
+
+.seven #imfor{
+  position: fixed;
+  margin-left: 10px;
+  margin-top: 10px;
+  color: rgb(90, 190, 120);
+  line-height: 140pt;
+  font-size: 140pt;
+  width: 100px;
+  font-family: "Anton";
+}
+
+.seven h1{
+  color: rgb(90, 190, 120);
+  line-height: 140pt;
+  font-size: 140pt;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  font-family: "Anton";
+}
+
+.seven h2{
+  color: rgba(0, 0, 0, 0.8);
+  font-family: "Anton";
+}
+
+
+.seven #parttwo{
+  margin-left: 37%;
+  width: 66%;
+}
+
+.seven #highlight{
+  margin-top: 300px;
+  transform: rotate(90deg);
+  font-family: "Anton";
+  letter-spacing: 5px;
+  line-height: 25px;
+
+}
+
+.seven a{
+  color: rgb(90, 190, 120);
+}
+
+.seven a:hover{
+  color: rgb(190, 200, 180);
+}
+
+.seven em{
+  line-height: 80pt;
+  font-size: 72pt;
+  color: rgba(90, 190, 120, .5);
+
+}
+
+
+
+.eight{
+  color: rgb(190, 200, 180)
+}
+
+.eight h1{
   color: rgb(190, 190, 170);
   position: fixed;
   margin-left: 200px;
 }
 
-h2{
-  color: rgb(200, 170, 170);
+.eight p{
+  margin-top: 300px；
+  font-family: sans-serif;
+  border: none;
+  text-align: center;
+}
+
+.eight a{
+  color: rgb(90, 200, 180)
+}
+
+
+
+.nine{
+  font-family: "Slabo 27px";
+  color: black;
+  font-weight: bold;
+}
+
+.nine #imfor{
+  position: fixed;
+  margin-left: 10px;
+  margin-top: 10px;
+  color: rgb(90, 190, 120);
+  line-height: 140pt;
+  font-size: 140pt;
+  width: 100px;
+  font-family: "Anton";
+}
+
+.nine h1{
+  color: rgb(90, 190, 120);
+  line-height: 140pt;
+  font-size: 140pt;
+  width: 100px;
+  font-family: "Anton";
+  text-align: right;
+}
+
+.nine h2{
+  color: rgba(0, 0, 0, 0.8);
+  font-family: "Anton";
+}
+
+
+.nine #parttwo{
+  margin-left: 37%;
+  width: 66%;
+  height: 800px;
+}
+
+.nine #highlight{
+  float: left;
+  color: rgba(90, 190, 120, .5);
+  transform: rotate(90deg);
+  font-family: "Anton";
+  letter-spacing: 5px;
+  line-height: 25px;
+  width: 450px;
+
+}
+
+.nine #left{
+  float: left;
+  width: 50%;
+}
+
+.nine em{
+  float: left;
+  width: 50%;
+  line-height: 14pt;
+  font-size: 10pt;
+  color: rgba(90, 190, 120, .5);
+
+}
+
+
+
+
+
+.ten{
+  font-family: "Slabo 27px";
+  color: black;
+  font-weight: bold;
+}
+
+.ten #imfor{
+  position: fixed;
+  margin-top: 10px;
+  color: rgb(90, 190, 120);
+  line-height: 140pt;
+  font-size: 140pt;
+  width: 100px;
+  font-family: "Anton";
+}
+
+.ten h1{
+  color: rgb(90, 190, 120);
+  line-height: 140pt;
+  font-size: 140pt;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  font-family: "Anton";
+}
+
+.ten h2{
+  color: rgba(0, 0, 0, 0.8);
+  font-family: "Anton";
+}
+
+
+.ten #parttwo{
+  margin-left: 37%;
+  width: 66%;
+}
+
+.ten #highlight{
+  margin-top: 300px;
+  transform: rotate(90deg);
+  font-family: "Anton";
+  letter-spacing: 5px;
+  line-height: 25px;
+
+}
+
+
+.ten em{
   float: right;
-  margin-left: 200px;
-}
-
-h6{
-  color: rgb(200, 170, 170);
-  float: right;
-  margin-left: 200px;
-}
-
-div{
-  display: inline;
-}
-
-body:nth-child(4){
-  background-color: gray;
-}
-
-body:nth-child(10){
-  clear: both;
-  font-family: fantasy;
-  float: right;
+  line-height: 14pt;
+  font-size: 10pt;
+  color: rgba(90, 190, 120, .5);
 
 }
