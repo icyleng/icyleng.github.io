@@ -59,6 +59,10 @@ a:hover{
   color: rgba(90, 190, 120,0.5);
 }
 
+a:visited{
+  color: rgb(230, 130, 70);
+}
+
 #highlight{
   position: fixed;
   margin-top: 300px;
