@@ -58,13 +58,24 @@ nav a:hover {
   padding-top: 50px;
   padding-left: 0px;
   width: 65%;
-  padding-bottom: 50px;
+  padding-bottom: 100px;
 }
 
-.detailpic{
+.detailpic3{
   margin: 0px 20px 20px 0px;
   float: left;
   height: 460px;
+}
+
+.detailpic2{
+  margin: 0px 20px 20px 0px;
+  float: left;
+  width: 30%;
+}
+
+.detailpic1{
+  margin-bottom: 20px;
+  width: 100%;
 }
 
 .columndetailmove{
@@ -98,7 +109,7 @@ nav a:hover {
   letter-spacing: 2px;
   color: black;
   font-family: "Raleway",Helvetica, arial, sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   text-decoration: none;
   font-size: 6px;
 }
