@@ -11,9 +11,9 @@
        <header>
            <img class="logo" src="img/logo.png"/>
            <span class="menu-icon">
-               <hr class="right" color="#292929" size="2.5">
-               <hr class="left" color="#292929" size="2.5">
-               <hr class="left" color="#292929" size="2.5">
+               <div class="right"></div>
+               <div class="remove"></div>
+               <div class="left"></div>
            </span>
            <ul class="menu">
                <li class="now">Home</li>
@@ -24,13 +24,22 @@
        
        <div class="split-slideshow">
            <div class="slideshow">
-               <div class="slider">
                    <div class="item">
                        <img class="homeimg" src="img/index/sshome.png"/>
-                       <div class="project"><h1>S-Spots</h1></div>
+                       <div style="background-color: #B0FDFF"><h1 class="text">S-Spots</h1></div>
                    </div>
-               </div>
+                   <div class="item">
+                       <img class="homeimg" src="img/index/sshome.png"/>
+                       <div style="background-color: #FF5958"><h1 class="text">Mountain</h1></div>
+                   </div>
+                   
+                   <div class="item">
+                       <img class="homeimg" src="img/index/sshome.png"/>
+                       <div style="background-color: #FBFF59"><h1 class="text">Meow</h1></div>
+                   </div>
+                   
            </div>
+           
            <div class="slideshow-text">
                <div class="item">
                    <h2 class="number">
@@ -46,8 +55,13 @@
                </div>
            </div>
            
-           <div class="arrow-left"></div>
-           <div class="arrow-right"></div>
+           <div class="arrow-left" onclick="plusSlides(-1)"></div>
+           <div class="dots">
+               <span class="dot" onclick="currentSlide(1)"></span>
+               <span class="dot" onclick="currentSlide(2)"></span>
+               <span class="dot" onclick="currentSlide(3)"></span>
+           </div>
+           <div class="arrow-right" onclick="plusSlides(1)"></div>
            
        </div>
        
