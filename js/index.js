@@ -73,7 +73,15 @@ $(document).ready(function(){
         selector:".project h1",
         shine: true,
         perspective: 3000,
-        sensitivity: 20,
+        sensitivity: 25,
         invert:true,
+    })
+})
+
+$(document).ready(function(){
+    $(".meau-icon")
+        .click(function(){
+        $(".menu li")
+            .css({"display":"inline-block"})
     })
 })

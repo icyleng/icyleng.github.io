@@ -4,7 +4,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 .logo{
     float: left;
-    height: 35px;
+    height: 30px;
     margin-top: 25px;
     margin-left: 30px;
 }
@@ -36,22 +36,24 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     position: absolute;
     right: 85px;
     top: 30px;
-    line-height: 20px;
-    font-family: 'raleway', sans-serif;
-    font-weight: 300;
-    font-size: 13px;
     letter-spacing: .5px;
 }
 
 .menu li{
+    line-height: 20px;
+    font-family: 'raleway', sans-serif;
+    font-size: 13px;
     padding: 0 10px 0 10px;
     list-style: none;
-    display: inline-block;
 }
 
-.menu li .now{
-    clear: both;
-    font-weight: 400;
+.menu li a{
+    font-weight: 300;
+}
+
+.menu li.now{
+    font-weight: 600;
+}
 }
 
 .left{
