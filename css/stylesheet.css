@@ -24,7 +24,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 .menu-icon{
     width: 30px;
     float: right;
-    margin-top:25px;
+    margin-top:15px;
     margin-right: 30px;
 }
 
@@ -35,7 +35,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 .menu{ 
     position: absolute;
     right: 85px;
-    top: 30px;
+    top: 23px;
     letter-spacing: .5px;
 }
 
@@ -45,6 +45,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     font-size: 13px;
     padding: 0 10px 0 10px;
     list-style: none;
+    display: inline-block;
 }
 
 .menu li a{
