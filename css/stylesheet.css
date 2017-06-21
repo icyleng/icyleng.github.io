@@ -106,7 +106,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 .filters{
     width: 100px;
     margin-bottom: 5px;
-    margin-left: 100px;
+    margin-left: 107px;
 }
 
 .projectname{
@@ -222,17 +222,21 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     text-shadow: 0 10px 30px rgba(0,0,0,0.05);
 }
 
-.slide{
-    -webkit-animation: slide 0.5s forwords;
-    animation: slide 0.5s forwords;
+.fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
 
-@-webkit-keyframes slide {
-    100% {left: 0;}
+@-webkit-keyframes fade {
+    from {opacity: .2;}
+    to {opacity: 1;}
 }
 
-@keyframes slide {
-    100% {left: 0;}
+@keyframes fade {
+    from {opacity: .2;}
+    to {opacity: 1;}
 }
 
 .active, .dot:hover{
@@ -261,7 +265,7 @@ h2{
     font-size: 72px;
     line-height: 65px;
     margin-top: 40px;
-    margin-left: 100px;
+    margin-left: 107px;
     margin-bottom: 45px;
     width: 90px;
 }
