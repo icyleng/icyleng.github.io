@@ -249,29 +249,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     opacity: 1;
 }
 
-/*设置a的定位，给我们自己编写的下划线一个定位参考*/
-.left-to-right{
-     position:relative;
-}
-/*使用伪类给a下面添加下划线*/
-/*css3为了区别伪类选择器把::改为:,使用:也会自动转为::*/
-.left-to-right::after{
-     content:'';
-     display:block;
-/*开始时候下划线的宽度为0*/
-     width:0;
-     height:3px;
-     position:absolute;
-     left:0;
-     bottom:-3px;
-     background:#000;
-/*这里我们设定所有改变都有动画效果，可以自己指定样式才有动画效果*/
-     transition:all 0.3s ease-in-out;
- }
-.left-to-right:hover::after{
-     width:100%;
- }
-
 /*outfit*/
 
 a{
