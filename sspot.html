@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+  <html>
+       
+   <head>
+     <title>Icy Leng Design - S-spot</title>
+     <link type="text/css" rel="stylesheet" href="css/detailstylesheet.css"/>
+     <link href="https://fonts.googleapis.com/css?family=Radley:400,400i|Raleway:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+       
+       <style>
+           /*设置a的定位，下划线定位参考*/
+           .left-to-right{
+                position:relative;
+            }
+           /*使用伪类给a下面添加下划线*/
+           /*css3为了区别伪类选择器把::改为:,使用:也会自动转为::*/
+           .left-to-right::after{
+                content:'';
+                display:block;
+           /*开始时候下划线的宽度为0*/
+                width:0;
+                height: 1px;
+                position:absolute;
+                left:0;
+                bottom:-5px;
+                background: #4f4f4f;
+           /*设定所有改变都有动画效果*/
+                transition:all 0.3s ease-in-out;
+            }
+           .left-to-right:hover::after{
+                width:100%;
+            }
+       </style>
+   </head>
+       
+   <body>
+       <header style="background-color: #B0FDFF">
+           <a href="index.html"><img class="logo" src="img/logo.png"/></a>
+           <h5 class="back"><a href="index.html" class="left-to-right">Back</a></h5>
+           <span class="menu-icon">
+               <div class="right"></div>
+               <div class="remove"></div>
+               <div class="left"></div>
+           </span>
+           <ul class="menu">
+               <li class="now">Home</li>
+               <li><a href="" class="left-to-right">All works</a></li>
+               <li><a href="" class="left-to-right">About</a></li>
+           </ul>
+           <h1 class="title">S-spots</h1>
+           <img class="cover" src="img/index/sshome.png"/>
+       </header>
+       
+       <div class="discription">
+           <div class="discription-column">
+               <h2>Project</h2>
+               <p>This App is a spot app, which provide imformation of skateboarding spot. It allows skateboarder rate and comment for every spot. Or skateboarder can submit new skateboarding spot. And skateboarder can communicate through this app. </p>
+           </div>
+           
+           <div class="discription-column">
+               <h2>Background</h2>
+               <p>This App is a spot app, which provide imformation of skateboarding spot. It allows skateboarder rate and comment for every spot. Or skateboarder can submit new skateboarding spot. And skateboarder can communicate through this app. </p>
+           </div>
+           
+           <div class="discription-column">
+               <h2>Catalog</h2>
+               <p># UI&UX<br># Branding<br># Otis</p>
+           </div>
+       </div>
+       
+       <div class="slideshow">
+       
+        <div class="draft">    
+             <div class="item fade">
+                <img class="draftshow" src="img/sspot/colorpalate.jpg"/>
+             </div>
+                    
+             <div class="item fade">
+                <img class="draftshow" src="img/sspot/colorpalate1.jpg"/>
+             </div>
+           
+             <div class="item fade">
+                <img class="draftshow" src="img/sspot/colorpalate2.jpg"/>
+             </div>
+         </div>
+       
+         <div class="arrow-left fade" onclick="plusSlides(-1)" style="border-radius: 100%; border-color: white"><div style="border-top-color: white; border-left-color: white"></div></div>
+         <div class="dots">
+            <span class="dot" onclick="currentSlide(1)" style="background-color: white"></span>
+            <span class="dot" onclick="currentSlide(2)" style="background-color: white"></span>
+            <span class="dot" onclick="currentSlide(3)" style="background-color: white"></span>
+         </div>
+         <div class="arrow-right fade" onclick="plusSlides(1)" style="border-radius: 100%; border-color: white"><div style="border-bottom-color: white; border-right-color: white"></div></div>
+        </div>
+   
+   </body>
+       
+   <footer>
+       
+       <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+       <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+       <script src='https://cdn.rawgit.com/ariona/hover3d/master/dist/js/jquery.hover3d.js'></script>
+       <script src='js/detail.js'></script>
+   </footer>
+      
+  </html>

@@ -1,0 +1,243 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,p{ margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent; }
+
+
+/* Header */ 
+
+header{
+    height: 37vh;
+    border: 0px 0px 0px 0px;
+    border-color: white;
+}
+    
+    /*Layout */
+
+
+*{
+    color: #292929;
+}
+
+.logo{
+    float: left;
+    height: 30px;
+    margin-top: 25px;
+    margin-left: 30px;
+}
+
+.back{
+    float: left;
+    margin-top: 32px;
+    margin-left: 20px;
+    font-family: 'raleway', sans-serif;
+    font-size: 10px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+.menu-icon{
+    width: 30px;
+    float: right;
+    margin-top:22px;
+    margin-right: 30px;
+}
+
+.menu-icon div{
+    background-color: #292929;
+    height: 2px;
+    width: 25px;
+    margin-top: 5px;
+}
+
+.menu{ 
+    position: absolute;
+    right: 85px;
+    top: 23px;
+    letter-spacing: .5px;
+}
+
+.menu li{
+    display: none;
+    margin-right: -200px;
+    line-height: 25px;
+    font-family: 'raleway', sans-serif;
+    font-size: 10px;
+    padding: 0 10px 0 10px;
+    list-style: none;
+}
+
+.menu li a{
+    font-weight: 300;
+}
+
+.menu li.now{
+    font-weight: 600;
+}
+
+.title{
+    padding-left: 1.5vw;
+    font-size: 15vh;
+    letter-spacing: 3vw;
+    padding-top: 16vh;
+    text-align: center;
+}
+
+.cover{
+    margin-top: -15vh;
+    margin-left: 30vw;
+    width: 40vw;
+}
+
+/* Discription */
+
+.discription{
+    padding-top: 260px;
+    margin-left: 15vw;
+    width: 75vw;
+}
+
+.discription-column{
+    float:left; 
+    width: 25vw;
+    padding-right: 5vw;
+    box-sizing: border-box;
+}
+
+.discription-column p{
+    margin-top: 10px;
+}
+
+/* slideshow */
+
+.slideshow{
+    position: absolute;
+    margin-top: 200px;
+}
+
+.draftshow{
+    width: 100vw;
+}
+
+.arrow-left{
+    position: absolute;
+    left: 70px;
+    bottom: 40%;
+    box-sizing: border-box;
+    width: 80px;
+    height: 80px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #292929;
+    opacity: 0.3;
+}
+
+.arrow-left div{
+    margin-left: 28px;
+    margin-top: 23px;
+    box-sizing: border-box;
+    border: 2px solid transparent;
+    width: 30px;
+    height: 30px;
+    border-top-color: #292929;
+    border-left-color: #292929;
+    transform: rotate(-45deg);
+}
+
+.arrow-right{
+    position: absolute;
+    right: 80px;
+    bottom: 40%;
+    box-sizing: border-box;
+    width: 80px;
+    height: 80px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #292929;
+    opacity: 0.3;
+}
+
+.arrow-right div{
+    margin-left: 18px;
+    margin-top: 24px;
+    box-sizing: border-box;
+    border: 2px solid transparent;
+    width: 30px;
+    height: 30px;
+    border-bottom-color: #292929;
+    border-right-color: #292929;
+    transform: rotate(-45deg);
+}
+
+.dots{
+    position: absolute;
+    bottom: 8%;
+    left: 50%;
+}
+
+.dot {
+    opacity: 0.3;
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #292929;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .2;}
+    to {opacity: 1;}
+}
+
+@keyframes fade {
+    from {opacity: .2;}
+    to {opacity: 1;}
+}
+
+.active, .dot:hover{
+    opacity: 1;
+}
+
+/* Link */
+
+a{
+    font-style: none;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Typography */ 
+
+h1{
+    color: white;
+    text-transform: uppercase;
+    font-family: 'raleway', sans-serif;
+    font-weight: 800;
+    text-align: center;
+}
+
+h2{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    font-family: 'raleway', sans-serif;
+}
+
+p{
+    color: #868686;
+    letter-spacing: 0.2px;
+    line-height: 18px;
+    font-size: 12px;
+    font-weight: 300;
+    font-family: 'raleway', sans-serif;
+}
+
+/* Animation */

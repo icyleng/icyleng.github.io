@@ -5,6 +5,31 @@
      <title>Icy Leng Design</title>
      <link type="text/css" rel="stylesheet" href="css/stylesheet.css"/>
      <link href="https://fonts.googleapis.com/css?family=Radley:400,400i|Raleway:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+       
+       <style>
+           /*设置a的定位，下划线定位参考*/
+           .left-to-right{
+                position:relative;
+            }
+           /*使用伪类给a下面添加下划线*/
+           /*css3为了区别伪类选择器把::改为:,使用:也会自动转为::*/
+           .left-to-right::after{
+                content:'';
+                display:block;
+           /*开始时候下划线的宽度为0*/
+                width:0;
+                height: 1px;
+                position:absolute;
+                left:0;
+                bottom:-5px;
+                background: #4f4f4f;
+           /*设定所有改变都有动画效果*/
+                transition:all 0.3s ease-in-out;
+            }
+           .left-to-right:hover::after{
+                width:100%;
+            }
+       </style>
    </head>
        
    <body>
@@ -49,10 +74,10 @@
                       &nbsp;&nbsp;/<br>
                       03
                    </h2>
-                   <h5 class="filters">#UI&UX</h5>
-                   <h5 class="filters">#Branding</h5>
+                   <h5 class="filters"><a href="" class="left-to-right">#UI&UX</a></h5>
+                   <h5 class="filters"><a href="" class="left-to-right">#Branding</a></h5>
                    <h6 class="projectname">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                       S-Spots
+                       <a href="" class="left-to-right">S-Spots</a>
                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h6>
                </div>
                
@@ -62,11 +87,10 @@
                       &nbsp;&nbsp;/<br>
                       03
                    </h2>
-                   <h5 class="filters">#UI&UX</h5>
-                   <h5 class="filters">#Experimental</h5>
-                   <h5 class="filters">#Otis</h5>
+                   <h5 class="filters"><a href="" class="left-to-right">#UI&UX</a></h5>
+                   <h5 class="filters"><a href="" class="left-to-right">#Branding</a></h5>
                    <h6 class="projectname">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                       Mountain
+                       <a href="" class="left-to-right">Mountain</a>
                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h6>   
                </div>
                
@@ -76,11 +100,10 @@
                       &nbsp;&nbsp;/<br>
                       03
                    </h2>
-                   <h5 class="filters">#UI&UX</h5>
-                   <h5 class="filters">#Experimental</h5>
-                   <h5 class="filters">#Otis</h5>
+                   <h5 class="filters"><a href="" class="left-to-right">#UI&UX</a></h5>
+                   <h5 class="filters"><a href="" class="left-to-right">#Branding</a></h5>
                    <h6 class="projectname">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                       Meow
+                       <a href="" class="left-to-right">Meow</a>
                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h6>   
                </div>
                
@@ -97,13 +120,13 @@
        </div>
        
        <footer>
-           <h6 class="name">Icy Leng</h6>
+           <h6 class="name"><a href="" class="left-to-right">Icy Leng</a></h6>
            <ul class="catalog">
-               <li class="catalog-element1"><a href="index.html">UI&UX</a></li>
-               <li class="catalog-click"><a href="branding.html">Branding&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
-               <li class="catalog-element2"><a href="printing.html">Printing</a></li>
-               <li class="catalog-element3"><a href="vedio.html">Vedio</a></li>
-               <li class="catalog-element4"><a href="experimental.html">Experimental</a></li>
+               <a href="index.html"><li class="catalog-element1">UI&UX</li></a>
+               <a href="branding.html"><li class="catalog-click2">Branding&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li></a>
+               <a href="printing.html"><li class="catalog-element2">Printing</li></a>
+               <a href="vedio.html"><li class="catalog-element3">Vedio</li></a>
+               <a href="experimental.html"><li class="catalog-element4">Experimental</li></a>
            </ul>
        </footer>
        
