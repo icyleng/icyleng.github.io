@@ -233,11 +233,87 @@ header{
 footer{
     box-sizing: border-box;
     width: 100%;
-    height: 300px;
+    height: 650px;
     background-color: #F7F7F7;
 }
 
+.footnav{
+    width: 100%;
+    height: 170px;
+}
 
+.previous{
+    float: left;
+    margin-left: 5vw;
+    width: 44vw;
+    text-align: left;
+}
+
+.next{
+    float: right;
+    margin-right: 5vw;
+    width: 44vw;
+    text-align: right;
+}
+
+.footnav h4{
+    padding-top: 50px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+}
+
+.section-line{
+    background-color: lightgray;
+    height: 1px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.random{
+    width: 75vw;
+    margin-left: 12.5vw;
+    margin-top: 50px;
+}
+
+.random-project{
+    width: 23vw;
+    float: left;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+.random-project img{
+    width: 23vw;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.random-project img:hover{
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+    filter: grayscale(0%);
+    transition: all 0.3s ease-in-out;
+}
+
+.random-project p{
+    margin-top: 10px;
+    margin-left: 8px;
+    float: right;
+}
+
+.copyright{
+    position: absolute;
+    margin-top: 325px;
+    line-height: 50px;
+    width: 100%;
+    text-align: center;
+}
 
 /* Link */
 
@@ -259,19 +335,92 @@ h1{
 
 h2{
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 9px;
     font-weight: 600;
-    letter-spacing: 3px;
+    letter-spacing: 5px;
     font-family: 'raleway', sans-serif;
+}
+
+h3{
+    font-family: 'raleway', sans-serif;
+    color: lightgray;
+    text-transform: uppercase;
+    font-size: 70px;
+    font-weight: 800;
+    opacity: 0.6;
+    letter-spacing: 0.5vw;
+    line-height: 110px;
+}
+
+h4{
+    text-transform: uppercase;
+    font-family: 'raleway', sans-serif;
+    font-weight: 400;
+    font-size: 9px;
+    letter-spacing: 5px;
 }
 
 p{
     color: #868686;
-    letter-spacing: 0.2px;
-    line-height: 18px;
-    font-size: 12px;
-    font-weight: 300;
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 400;
     font-family: 'raleway', sans-serif;
 }
 
-/* Animation */
+li{
+    list-style: none;
+}
+
+li h4{
+    margin-top: 10px;
+    font-size: 9px;
+    line-height: 14px;
+    float: left;
+}
+
+li p{
+    line-height: 14px;
+    font-size: 9px;
+    opacity: 0.7;
+}
+
+/* A N I M A T I O N */
+
+/*link animation*/
+.left-to-right{
+    position:relative;
+}
+/*使用伪类给a下面添加下划线*/
+/*css3为了区别伪类选择器把::改为:,使用:也会自动转为::*/
+.left-to-right::after{
+    content:'';
+    display:block;
+/*开始时候下划线的宽度为0*/
+    width:0;
+    height: 1px;
+    position:absolute;
+    left:0;
+    bottom:-5px;
+    background: #4f4f4f;
+/*设定所有改变都有动画效果*/
+    transition:all 0.3s ease-in-out;
+}
+.left-to-right:hover::after{
+    width:100%;
+}
+
+/*Footnav animation*/
+.previous div{
+    position: absolute;
+    left: 5vw;
+    height: 3px;
+    width: 0px;
+}
+
+.next div{
+    position: absolute;
+    right: 5vw;
+    height: 3px;
+    width: 0px;
+}

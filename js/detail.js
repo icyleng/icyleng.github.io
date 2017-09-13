@@ -51,3 +51,19 @@ function showSlides(n) {
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className +=" active";
 }
+
+/*Footnav animation*/
+
+$(document).ready(function(){
+    $(".previous")
+    .mouseover(function(){
+        $(".animationright-to-left").css({"width":"100px", "transition":"all 0.3s ease-in-out"});
+    })
+})
+
+$(document).ready(function(){
+    $(".previous")
+    .mouseout(function(){
+        $(".animationright-to-left").css({"width":"0px", "transition":"all 0.3s ease-in-out"});
+    })
+})
