@@ -6,30 +6,6 @@
      <link type="text/css" rel="stylesheet" href="css/stylesheet.css"/>
      <link href="https://fonts.googleapis.com/css?family=Radley:400,400i|Raleway:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
        
-       <style>
-           /*设置a的定位，下划线定位参考*/
-           .left-to-right{
-                position:relative;
-            }
-           /*使用伪类给a下面添加下划线*/
-           /*css3为了区别伪类选择器把::改为:,使用:也会自动转为::*/
-           .left-to-right::after{
-                content:'';
-                display:block;
-           /*开始时候下划线的宽度为0*/
-                width:0;
-                height: 1px;
-                position:absolute;
-                left:0;
-                bottom:-5px;
-                background: #4f4f4f;
-           /*设定所有改变都有动画效果*/
-                transition:all 0.3s ease-in-out;
-            }
-           .left-to-right:hover::after{
-                width:100%;
-            }
-       </style>
    </head>
        
    <body>
@@ -42,8 +18,8 @@
            </span>
            <ul class="menu">
                <li class="now">Home</li>
-               <li><a>All works</a></li>
-               <li><a>About</a></li>
+               <li><a href="allworks.html">All works</a></li>
+               <li><a href="about.html">About</a></li>
            </ul>
        </header>
        

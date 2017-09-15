@@ -83,8 +83,8 @@ header{
 
 .cover{
     margin-top: -15vh;
-    margin-left: 30vw;
-    width: 40vw;
+    margin-left: 32.5vw;
+    width: 35vw;
 }
 
 /* Discription */
@@ -245,14 +245,12 @@ footer{
 .previous{
     float: left;
     margin-left: 5vw;
-    width: 44vw;
     text-align: left;
 }
 
 .next{
     float: right;
     margin-right: 5vw;
-    width: 44vw;
     text-align: right;
 }
 

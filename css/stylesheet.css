@@ -254,6 +254,30 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 /*Animations*/
 
+/*设置a的定位，下划线定位参考*/
+.left-to-right{
+    position:relative;
+}
+/*使用伪类给a下面添加下划线*/
+/*css3为了区别伪类选择器把::改为:,使用:也会自动转为::*/
+.left-to-right::after{
+    content:'';
+    display:block;
+/*开始时候下划线的宽度为0*/
+    width:0;
+    height: 1px;
+    position:absolute;
+    left:0;
+    bottom:-5px;
+    background: #4f4f4f;
+/*设定所有改变都有动画效果*/
+    transition:all 0.3s ease-in-out;
+}
+.left-to-right:hover::after{
+    width:100%;
+}
+
+
 .text:hover{
     transition: text-shadow .3s ease;
     text-shadow: 0 10px 30px rgba(0,0,0,0.05);

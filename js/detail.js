@@ -57,7 +57,7 @@ function showSlides(n) {
 $(document).ready(function(){
     $(".previous")
     .mouseover(function(){
-        $(".animationright-to-left").css({"width":"100px", "transition":"all 0.3s ease-in-out"});
+        $(".animationright-to-left").css({"width":"105px", "transition":"all 0.3s ease-in-out"});
     })
 })
 
@@ -65,5 +65,19 @@ $(document).ready(function(){
     $(".previous")
     .mouseout(function(){
         $(".animationright-to-left").css({"width":"0px", "transition":"all 0.3s ease-in-out"});
+    })
+})
+
+$(document).ready(function(){
+    $(".next")
+    .mouseover(function(){
+        $(".animationleft-to-right").css({"width":"65px", "transition":"all 0.3s ease-in-out"});
+    })
+})
+
+$(document).ready(function(){
+    $(".next")
+    .mouseout(function(){
+        $(".animationleft-to-right").css({"width":"0px", "transition":"all 0.3s ease-in-out"});
     })
 })
