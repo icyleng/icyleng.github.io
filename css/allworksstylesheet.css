@@ -76,8 +76,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     display: block;
     font-family: 'raleway', sans-serif;
     line-height: 30px;
-    opacity: 0.5;
-    font-weight: 400;
+    font-weight: 300; 
 }
 
 .worklist{
@@ -138,4 +137,10 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     display: inline;
     margin-right: 8px;
     font-weight: 400;
+}
+
+.left-nav li:hover{
+    font-family: 'Radley',serif;
+    font-size: 72px;
+    line-height: 100px;
 }
