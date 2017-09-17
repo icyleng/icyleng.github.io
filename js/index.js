@@ -142,9 +142,3 @@ function showSlides(n) {
     dots[slideIndex-1].className +=" active";
     text[slideIndex-1].style.display = "block";
 }
-
-/*Allworks*/
-
-$(".worklist").gridalicious({
-    width: 280px;
-});
