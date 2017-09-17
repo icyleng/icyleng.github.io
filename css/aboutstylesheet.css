@@ -4,7 +4,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     color: #292929;
 }
 
-
 /*Layout*/
 
 .logo{
@@ -14,19 +13,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     margin-left: 30px;
 }
 
-.name{
-    position: absolute;
-    bottom: 115px;
-    left: -20px;
-    transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-    -webkit-transform: rotate(-90deg);
-    -0-transform: rotate(-90deg);
-    
-}
-
 body{
+    z-index: -999;
     width: 100vw;
     height: 100vh;
     background: transparent linear-gradient(to top right, #f2ffe5 0%, #eeffff 40%, #b2fef1 100%);
@@ -66,6 +54,7 @@ body{
 
 .menu li a{
     font-weight: 300;
+    text-decoration: none;
 }
 
 .menu li.now{
@@ -83,12 +72,44 @@ body{
     width: 100vw;
     height: 100vh;
     display: block;
-    background: transparent;
+}
 
+h1{
+    position: absolute;
+    z-index: 998;
+    top: 100px;
+    left: 90px;
+    font-size: 100px;
+    line-height: 100px;
+    font-family: 'radlet', serif;
+}
+
+p{
+    position: absolute;
+    z-index: 999;
+    top: 35vh;
+    left: 25vw;
+    font-family: 'raleway', sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+p a{
+    text-decoration: none;
+    color: inherit;
+    border-bottom: 2px solid #ff9067;
+    padding-bottom: 3px;
+}
+
+canvas{
+    position:absolute;
+    z-index: -3;
+    top:0;left:0;
+    background:transparent;
 }
 
 .gradient{
-    z-index: -3;
+    z-index: -4;
     position: absolute;
     box-sizing: border-box;
     border-top: 85px solid white;
@@ -143,39 +164,6 @@ body{
     -ms-animation: colorchange 20s infinite linear;
     -o-animation: colorchange 20s infinite linear;
 }
-  
-.color{
-    position: absolute;
-    z-index: -1;
-    
-    background: transparent linear-gradient(to top right, #aafffe 0%, #cdffff 40%, #aaf2ff 100%);
-}
-
-.contentbox h1{
-    z-index: 999;
-    opacity: 1;
-    margin-top: 10px;
-    margin-left: -30px;
-    font-size: 100px;
-    font-family: 'radlet', serif;
-}
-
-.contentbox p{
-    z-index: 998;
-    opacity: 1;
-    margin-top: 40px;
-    margin-left: 200px;
-    font-family: 'raleway', sans-serif;
-    font-size: 14px;
-    line-height: 30px;
-}
-
-a{
-    text-decoration: none;
-    color: inherit;
-    border-bottom: 2px solid #ff9067;
-    padding-bottom: 3px;
-}
 
 .copyright{
     position: absolute;
@@ -212,4 +200,29 @@ a{
     0% {opacity: 0.8;}
     50% {opacity: 0;}
     100% {opacity: 0.8;}
+}
+
+/*hover underline*/
+
+/*设置a的定位，下划线定位参考*/
+.left-to-right{
+    position:relative;
+}
+/*使用伪类给a下面添加下划线*/
+/*css3为了区别伪类选择器把::改为:,使用:也会自动转为::*/
+.left-to-right::after{
+    content:'';
+    display:block;
+/*开始时候下划线的宽度为0*/
+    width:0;
+    height: 1px;
+    position:absolute;
+    left:0;
+    bottom:-5px;
+    background: #4f4f4f;
+/*设定所有改变都有动画效果*/
+    transition:all 0.3s ease-in-out;
+}
+.left-to-right:hover::after{
+    width:100%;
 }

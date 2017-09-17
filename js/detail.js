@@ -11,7 +11,7 @@ $(document).ready(function(){
 })
 
 $(document).ready(function(){
-    $(".split-slideshow")
+    $(".title")
     .click(function(){
         $(".left").css({"margin-top":"5px", "transform":"rotate(0deg)"});
         $(".right").css({"margin-top":"5px", "transform":"rotate(0deg)"});

@@ -277,7 +277,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     width:100%;
 }
 
-
+/*slideshow*/
 .text:hover{
     transition: text-shadow .3s ease;
     text-shadow: 0 10px 30px rgba(0,0,0,0.05);
