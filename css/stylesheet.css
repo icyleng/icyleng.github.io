@@ -203,7 +203,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 .catalog-click5::before{
     position: relative;
     bottom: 25px;
-    right: -45px;
+    right: -28px;
     content: "";
     border-width: 8px;
     border-style: solid;
