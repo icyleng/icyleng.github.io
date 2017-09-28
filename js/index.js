@@ -1,5 +1,3 @@
-
-
 /*menu icon*/
 
 $(document).ready(function(){
@@ -83,6 +81,17 @@ $(document).ready(function(){
      .mouseout(function(){
         $(".catalog-element4").css({"line-height":"5px", "opacity":".07", "color":"transparent"});
     })
+})
+
+$(document).ready(function(){
+    $("li:second")
+    .onclick(function(){
+        $("#uiux").removeClass(".catalog-click")
+              .addClass(".catalog-element1");
+        
+        $("#branding").removeClass(".catalog-element1")
+                      .addClass(".catalog-click");
+     })       
 })
 
 /*3d effection*/
