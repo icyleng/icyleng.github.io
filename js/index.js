@@ -101,7 +101,7 @@ $(document).ready(function(){
         selector:".homeimg",
         shine: true,
         perspective: 3000,
-        sensitivity: 40,
+        sensitivity: 30,
         invert:true,
     })
     
@@ -109,7 +109,7 @@ $(document).ready(function(){
         selector:".text",
         shine: true,
         perspective: 3000,
-        sensitivity: 25,
+        sensitivity: 40,
         invert:true,
     })
 })

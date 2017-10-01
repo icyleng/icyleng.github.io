@@ -29,7 +29,7 @@ header{
     margin-top: 32px;
     margin-left: 20px;
     font-family: 'raleway', sans-serif;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 300;
     letter-spacing: 0.5px;
 }
@@ -127,17 +127,17 @@ header{
     box-sizing: border-box;
     width: 80px;
     height: 80px;
-    border-width: 2px;
+    border-width: 3px;
     border-style: solid;
     border-color: #292929;
-    opacity: 0.3;
+    opacity: 0.4;
 }
 
 .arrow-left div{
     margin-left: 28px;
     margin-top: 23px;
     box-sizing: border-box;
-    border: 2px solid transparent;
+    border: 3px solid transparent;
     width: 30px;
     height: 30px;
     border-top-color: #292929;
@@ -152,17 +152,17 @@ header{
     box-sizing: border-box;
     width: 80px;
     height: 80px;
-    border-width: 2px;
+    border-width: 3px;
     border-style: solid;
     border-color: #292929;
-    opacity: 0.3;
+    opacity: 0.4;
 }
 
 .arrow-right div{
     margin-left: 18px;
     margin-top: 24px;
     box-sizing: border-box;
-    border: 2px solid transparent;
+    border: 3px solid transparent;
     width: 30px;
     height: 30px;
     border-bottom-color: #292929;
@@ -335,7 +335,7 @@ h1{
 
 h2{
     text-transform: uppercase;
-    font-size: 9px;
+    font-size: 10px;
     font-weight: 600;
     letter-spacing: 5px;
     font-family: 'raleway', sans-serif;
