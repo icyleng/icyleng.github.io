@@ -226,11 +226,29 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     border-color: transparent transparent #292929 transparent;
 }
 
+.arrow-left-box{
+    position: absolute;
+    left: 140px;
+    bottom: 95px;
+    width: 200px;
+    height: 80px;
+    border: transparent;
+}
+
+.arrow-right-box{
+    position: absolute;
+    right: 80px;
+    bottom: 95px;
+    width: 200px;
+    height: 80px;
+    border: transparent;
+}
+
 .arrow-left{
     position: absolute;
-    left: 160px;
-    bottom: 120px;
     box-sizing: border-box;
+    top: 22.5px;
+    left: 20px;
     width: 0;
     height: 0;
     border-width: 15px;
@@ -240,8 +258,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 .arrow-right{
     position: absolute;
-    right: 100px;
-    bottom: 120px;
+    top: 22.5px;
+    right: 20px;
     box-sizing: border-box;
     width: 0;
     height: 0;
@@ -250,15 +268,12 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     border-color: transparent transparent transparent #292929;
 }
 
-.arrow-left:hover{
-    left: 150px;
-    
+.arrow-left-box:hover{    
     transform: scale(1.5);
     transition-duration: .2s;
 }
 
-.arrow-right:hover{
-    right: 90px;
+.arrow-right-box:hover{
     transform: scale(1.5);
     transition-duration: .2s;
 }
