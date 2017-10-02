@@ -250,6 +250,19 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     border-color: transparent transparent transparent #292929;
 }
 
+.arrow-left:hover{
+    left: 150px;
+    
+    transform: scale(1.5);
+    transition-duration: .2s;
+}
+
+.arrow-right:hover{
+    right: 90px;
+    transform: scale(1.5);
+    transition-duration: .2s;
+}
+
 .dots{
     position: absolute;
     bottom: 115px;
