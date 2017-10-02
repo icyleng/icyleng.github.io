@@ -134,7 +134,7 @@ function showSlides(n) {
     var dots = document.getElementsByClassName("dot");
     var text = document.getElementsByClassName("item-text");
     if (n > 7) {location.href="video.html"}
-    if (n < 7) {location.href="branding.html"}
+    if (n < 7) {location.href="brandingreverse.html"}
     
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";

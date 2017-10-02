@@ -134,7 +134,7 @@ function showSlides(n) {
     var dots = document.getElementsByClassName("dot");
     var text = document.getElementsByClassName("item-text");
     if (n > 6) {location.href="printing.html"}
-    if (n < 6) {location.href="index.html"}
+    if (n < 6) {location.href="indexreverse.html"}
     
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
