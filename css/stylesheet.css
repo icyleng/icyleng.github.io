@@ -230,7 +230,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     position: absolute;
     left: 140px;
     bottom: 95px;
-    width: 200px;
+    width: 150px;
     height: 80px;
     border: transparent;
 }
@@ -239,7 +239,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     position: absolute;
     right: 80px;
     bottom: 95px;
-    width: 200px;
+    width: 150px;
     height: 80px;
     border: transparent;
 }
@@ -269,11 +269,13 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 
 .arrow-left-box:hover{    
+    left:150px;
     transform: scale(1.5);
     transition-duration: .2s;
 }
 
 .arrow-right-box:hover{
+    right: 90px;
     transform: scale(1.5);
     transition-duration: .2s;
 }
