@@ -133,10 +133,8 @@ function showSlides(n) {
     var slides = document.getElementsByClassName("item");
     var dots = document.getElementsByClassName("dot");
     var text = document.getElementsByClassName("item-text");
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
-    if (n > text.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = text.length}
+    if (n > slides.length) {location.href="branding.html"}
+    if (n < 1) {location.href="others.html"}
     
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
