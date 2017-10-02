@@ -282,8 +282,9 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 .dots{
     position: absolute;
-    bottom: 115px;
+    bottom: 125px;
     left: 50%;
+    margin-left: -68.5px;
 }
 
 .dot {
@@ -293,7 +294,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     width: 13px;
     margin: 0 2px;
     background-color: #292929;
-    border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
 }

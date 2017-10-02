@@ -117,7 +117,7 @@ $(document).ready(function(){
 
 /*slideshow*/
 
-var slideIndex = 1;
+var slideIndex = 9;
 showSlides(slideIndex);
 
 function plusSlides(n) {
@@ -134,7 +134,7 @@ function showSlides(n) {
     var dots = document.getElementsByClassName("dot");
     var text = document.getElementsByClassName("item-text");
     if (n > slides.length) {location.href="index.html"}
-    if (n < 1) {location.href="video.html"}
+    if (n < 9) {location.href="videoreverse.html"}
     
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";

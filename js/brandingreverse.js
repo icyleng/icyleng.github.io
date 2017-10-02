@@ -117,7 +117,7 @@ $(document).ready(function(){
 
 /*slideshow*/
 
-var slideIndex = 8;
+var slideIndex = 6;
 showSlides(slideIndex);
 
 function plusSlides(n) {
@@ -133,8 +133,8 @@ function showSlides(n) {
     var slides = document.getElementsByClassName("item");
     var dots = document.getElementsByClassName("dot");
     var text = document.getElementsByClassName("item-text");
-    if (n > 8) {location.href="others.html"}
-    if (n < 8) {location.href="printingreverse.html"}
+    if (n > 6) {location.href="printing.html"}
+    if (n < 6) {location.href="index.html"}
     
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
