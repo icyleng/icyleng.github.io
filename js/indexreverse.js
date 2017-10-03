@@ -133,7 +133,7 @@ function showSlides(n) {
     var slides = document.getElementsByClassName("item");
     var dots = document.getElementsByClassName("dot");
     var text = document.getElementsByClassName("item-text");
-    if (n > 5) {location.href="branding.html"}
+    if (n > slides.length) {location.href="branding.html"}
     if (n < 1) {location.href="othersreverse.html"}
     
     for (i = 0; i < slides.length; i++) {

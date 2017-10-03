@@ -117,7 +117,7 @@ $(document).ready(function(){
 
 /*slideshow*/
 
-var slideIndex = 7;
+var slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides(n) {
@@ -133,8 +133,8 @@ function showSlides(n) {
     var slides = document.getElementsByClassName("item");
     var dots = document.getElementsByClassName("dot");
     var text = document.getElementsByClassName("item-text");
-    if (n > 7) {location.href="video.html"}
-    if (n < 7) {location.href="brandingreverse.html"}
+    if (n > slides.length) {location.href="video.html"}
+    if (n < 1) {location.href="brandingreverse.html"}
     
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
