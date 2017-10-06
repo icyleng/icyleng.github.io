@@ -381,8 +381,9 @@ li{
 
 li h4{
     margin-top: 10px;
-    font-size: 9px;
+    font-size: 10px;
     line-height: 14px;
+    letter-spacing: 1px;
     float: left;
 }
 

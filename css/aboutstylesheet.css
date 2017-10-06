@@ -88,7 +88,7 @@ p{
     position: absolute;
     z-index: 999;
     top: 35vh;
-    left: 25vw;
+    left: 47vw;
     font-family: 'raleway', sans-serif;
     font-size: 14px;
     line-height: 30px;
@@ -99,6 +99,14 @@ p a{
     color: inherit;
     border-bottom: 2px solid #ff9067;
     padding-bottom: 3px;
+}
+
+.mypic{
+    position: absolute;
+    width: 350px;
+    top:32vh;
+    left:17vw;
+    border: 10px solid white;
 }
 
 canvas{

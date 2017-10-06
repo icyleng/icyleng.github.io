@@ -7,6 +7,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 /*Layout*/
 
 .logo{
+    position: fixed;
     float: left;
     height: 30px;
     margin-top: 25px;
@@ -14,10 +15,10 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 
 .menu-icon{
+    position: fixed;
     width: 30px;
-    float: right;
-    margin-top:22px;
-    margin-right: 30px;
+    top:22px;
+    right: 30px;
 }
 
 .menu-icon div{
@@ -28,7 +29,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 
 .menu{ 
-    position: absolute;
+    position: fixed;
     right: 85px;
     top: 23px;
     letter-spacing: 0.5px;
@@ -70,13 +71,13 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     position: fixed;
     z-index: 999;
     list-style: none;
-    width: 18%;
     margin-top: 20px;
     float: left;
     display: block;
     font-family: 'raleway', sans-serif;
     line-height: 30px;
-    font-weight: 300; 
+    font-weight: 400; 
+    font-size: 14px;
 }
 
 .worklist{
@@ -89,11 +90,12 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 .worklist li{
     margin-left: 20px;
-    max-width: 280px; 
+    width: 280px; 
     margin-bottom: 30px;
 }
 
 .worklist li img{
+    width: 280px;
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
     -ms-filter: grayscale(100%);
@@ -128,6 +130,60 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     opacity: 0.7;
 }
 
+/* worklist 2 */
+
+.worklist2{
+    margin-left: 10%;
+    list-style: none;
+    width: 90%;
+    display: flex;
+    flex-flow: wrap;
+}
+
+.worklist2 li{
+    margin-left: 20px;
+    width: 280px; 
+    margin-bottom: 30px;
+}
+
+.worklist2 li img{
+    width: 280px;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.worklist2 li img:hover{
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+    filter: grayscale(0%);
+    transition: all 0.3s ease-in-out;
+}
+
+.worklist2 li h4{
+    font-family: 'raleway', sans-serif;
+    font-weight: 700;
+    font-size: 9px;
+    margin-top: 10px;
+    font-size: 9px;
+    line-height: 14px;
+}
+
+.worklist2 li p{
+    font-family: 'raleway', sans-serif;
+    font-weight: 600;
+    margin-top: 10px;
+    line-height: 14px;
+    font-size: 9px;
+    opacity: 0.7;
+}
+
+/* worklist 2 end */
+
 .tag{
     margin-top: 8px;
     opacity: 0.4;
@@ -139,8 +195,47 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     font-weight: 400;
 }
 
-.left-nav li:hover{
+.active{
     font-family: 'Radley',serif;
     font-size: 72px;
     line-height: 100px;
+    transition-duration: .03s;
+}
+
+.section-line{
+    background-color: lightgray;
+    height: 1px;
+    width: 68%;
+    margin-left: 12%;
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
+
+/*Animations*/
+
+a{
+    text-decoration: none;
+}
+
+/*设置a的定位，下划线定位参考*/
+.left-to-right{
+    position:relative;
+}
+/*使用伪类给a下面添加下划线*/
+/*css3为了区别伪类选择器把::改为:,使用:也会自动转为::*/
+.left-to-right::after{
+    content:'';
+    display:block;
+/*开始时候下划线的宽度为0*/
+    width:0;
+    height: 1px;
+    position:absolute;
+    left:0;
+    bottom:3px;
+    background: #4f4f4f;
+/*设定所有改变都有动画效果*/
+    transition:all 0.3s ease-in-out;
+}
+.left-to-right:hover::after{
+    width:100%;
 }
