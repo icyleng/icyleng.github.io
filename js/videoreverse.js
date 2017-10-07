@@ -98,22 +98,14 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $(".item").hover3d({
-        selector:".homeimg",
+        selector:".card",
         shine: true,
-        perspective: 3000,
-        sensitivity: 30,
+        perspective: 6000,
+        sensitivity: 50,
         invert:true,
     })
-    
-    .hover3d({
-        selector:".text",
-        shine: true,
-        perspective: 3000,
-        sensitivity: 40,
-        invert:true,
-    })
-})
 
+})
 
 /*slideshow*/
 

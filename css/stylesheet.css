@@ -87,12 +87,9 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 
 .project{
+    z-index: 998;
     position:relative;
-    z-index: -1;
-    -moz-z-index: -1;
-    -webkit-z-index: -1;
-    -o-z-index: -1;
-    -ms-z-index: -1;
+    transform: translateZ(50px);
 }
 
 .homeimg{
@@ -106,7 +103,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     top: 50%;
     margin-right: -18%;
     margin-top: -15%;
-    width: 40%;;
+    width: 38%;
+    transform: translateZ(100px);
 }
 
 .slideshow-text{
@@ -368,8 +366,8 @@ h1{
     text-transform: uppercase;
     font-family: 'raleway', sans-serif;
     font-weight: 800;
-    font-size: 144px;
-    letter-spacing: 30px;
+    font-size: 10vw;
+    letter-spacing: 1.5vw;
     text-align: center;
 }
 
