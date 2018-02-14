@@ -154,7 +154,7 @@ canvas{
     -o-animation: colorchange 25s infinite linear;
 }
 
-.gradient1{
+.gradient2{
     z-index: -6;
     position: absolute;
     box-sizing: border-box;
@@ -233,4 +233,30 @@ canvas{
 }
 .left-to-right:hover::after{
     width:100%;
+}
+
+
+@media screen and (max-width: 468px){
+    
+    .gradient1{
+    border:0px;
+}
+
+   .gradient2{
+    border:0px;
+}
+    
+    .gradient{
+    border:0px;
+}
+    
+    #canvas{
+        border:0px;
+        width: 100vw;
+        height: 100vh;
+    }
+    
+    .contentbox{
+    border:0px;
+}
 }
