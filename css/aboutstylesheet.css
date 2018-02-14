@@ -238,25 +238,77 @@ canvas{
 
 @media screen and (max-width: 468px){
     
+    body{
+        overflow-x: hidden;
+        height: 150vh;
+    }
+    
+    h1{
+    width: 100vw;
+    left: 0vw;
+    text-align: center;
+    top: 100px;
+    font-size: 60px;
+    line-height: 80px;
+}
+    
+    p{
+    width: 77vw;
+    padding: 10vw;
+    z-index: 999;
+    top: 80vh;
+    left: 0vw;
+    font-family: 'raleway', sans-serif;
+    font-size: 12px;
+    line-height: 22px;
+}
+    
+    .mypic{
+    width: 80vw;
+    top:35vh;
+    left:10vw;
+    border: none;
+}
+    
+    .menu{ 
+    right: 20px;
+    top: 30px;
+}
+    
     .gradient1{
     border:0px;
+        height: 150vh;
 }
 
    .gradient2{
     border:0px;
+       height: 150vh;
 }
     
     .gradient{
     border:0px;
+        height: 150vh;
 }
     
     #canvas{
         border:0px;
         width: 100vw;
-        height: 100vh;
+        height: 150vh;
     }
     
     .contentbox{
     border:0px;
 }
+    
+    .copyright{
+    width: 100%;
+    left: 0vw;
+    bottom: -45vh;
+    text-align: center;
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'raleway', sans-serif;
+}
+    
 }
